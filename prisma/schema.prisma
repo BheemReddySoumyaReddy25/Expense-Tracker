@@ -1,0 +1,72 @@
+// This is your Prisma schema file.
+// Learn more in the docs: https://pris.ly/d/prisma-schema
+//
+// Prisma schema defines your data models (tables), their fields, and relationships.
+// Prisma generates a type-safe client for querying the database from your code.
+//
+// If you want to speed up queries or scale in serverless/edge environments,
+// try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js" // Generates Prisma Client for Node.js/TypeScript
+}
+
+datasource db {
+  provider = "postgresql"        // Database type
+  url      = env("DATABASE_URL") // Connection string from environment variable
+}
+
+model User {
+  /// Primary key (UUID string)
+  id          String   @id @default(uuid())
+
+  /// Unique identifier from Clerk authentication (maps app users to DB users)
+  clerkUserId String   @unique
+
+  /// Optional display name of the user
+  name        String?
+
+  /// Optional URL of the user's profile image
+  imageUrl    String?
+
+  /// Timestamp when the user record was created
+  createdAt   DateTime @default(now())
+
+  /// Timestamp automatically updated whenever the user record changes
+  updatedAt   DateTime @updatedAt
+
+  /// One-to-many relation: a user can have many records
+  records     Record[]
+}
+
+model Record {
+  /// Primary key (UUID string)
+  id        String   @id @default(uuid())
+
+  /// Description or title of the record (e.g. "Groceries", "Salary")
+  text      String
+
+  /// Monetary amount (income or expense)
+  amount    Float
+
+  /// Category of the record (defaults to "Other" if not provided)
+  category  String   @default("Other")
+
+  /// Date of the record (defaults to current timestamp)
+  date      DateTime @default(now())
+
+  /// Foreign key: references the associated user (via clerkUserId)
+  userId    String
+
+  /// Relation to User model; deletes records automatically if user is deleted
+  user      User     @relation(fields: [userId], references: [clerkUserId], onDelete: Cascade)
+
+  /// Timestamp when the record was created
+  createdAt DateTime @default(now())
+
+  /// Timestamp automatically updated whenever the record changes
+  updatedAt DateTime @updatedAt
+
+  /// Index on userId for faster lookups of records by user
+  @@index([userId])
+}
