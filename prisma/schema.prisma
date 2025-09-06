@@ -26,6 +26,9 @@ model User {
   /// Optional display name of the user
   name        String?
 
+  // email
+  email String @unique
+
   /// Optional URL of the user's profile image
   imageUrl    String?
 
