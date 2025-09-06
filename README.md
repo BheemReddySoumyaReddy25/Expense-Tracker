@@ -66,3 +66,15 @@ npx prisma migrate dev
 More information in our documentation:
 https://pris.ly/d/getting-started
 
+## Clerk Set up
+
+1. Install @clerk/nextjs
+``` bash
+npm install @clerk/nextjs
+```
+2. Set your Clerk API keys
+
+``` bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+```
