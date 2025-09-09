@@ -5,24 +5,24 @@ import React from "react";
 const features = [
   {
     icon: "🤖",
-    gradient: "from-emerald-500 via-green-500 to-teal-500",
-    hoverGradient: "from-emerald-500/5 to-green-500/5",
+    gradient: "from-sky-500 via-indigo-500 to-cyan-500",
+    hoverGradient: "from-sky-500/5 to-indigo-500/5",
     title: "AI-Powered Insights",
     description:
       "Get intelligent analysis of your spending patterns with personalized AI recommendations and automated category suggestions that learn from your behavior.",
   },
   {
     icon: "✨",
-    gradient: "from-green-500 via-teal-500 to-emerald-500",
-    hoverGradient: "from-green-500/5 to-teal-500/5",
+    gradient: "from-indigo-500 via-cyan-500 to-sky-500",
+    hoverGradient: "from-indigo-500/5 to-cyan-500/5",
     title: "Smart Categorization",
     description:
       "Let our AI automatically categorize your expenses with 99% accuracy and provide tailored recommendations to enhance your budget management effortlessly.",
   },
   {
     icon: "📊",
-    gradient: "from-teal-500 via-emerald-500 to-green-500",
-    hoverGradient: "from-teal-500/5 to-emerald-500/5",
+    gradient: "from-cyan-500 via-sky-500 to-indigo-500",
+    hoverGradient: "from-cyan-500/5 to-sky-500/5",
     title: "Intelligent Dashboard",
     description:
       "Experience a modern, AI-enhanced interface with real-time insights, interactive financial analytics, and beautiful visualizations that make sense of your data.",
@@ -31,17 +31,17 @@ const features = [
 
 function Features() {
   return (
-    <section className="py-20 px-8 bg-gradient-to-br from-gray-50 via-white to-emerald-50 dark:from-gray-900 dark:via-gray-800 dark:to-emerald-900/20">
+    <section className="py-20 px-8 bg-gradient-to-br from-gray-50 via-white to-sky-50 dark:from-gray-900 dark:via-gray-800 dark:to-sky-900/20">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-3 py-1 rounded-full text-sm font-medium mb-6">
-            <span className="w-1.5 h-1.5 bg-emerald-500 dark:bg-emerald-400 rounded-full"></span>
+          <div className="inline-flex items-center gap-2 bg-sky-50 dark:bg-sky-900/30 text-sky-700 dark:text-sky-300 px-3 py-1 rounded-full text-sm font-medium mb-6">
+            <span className="w-1.5 h-1.5 bg-sky-500 dark:bg-sky-400 rounded-full"></span>
             Features
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">
             Why Choose{" "}
-            <span className="text-emerald-600 dark:text-emerald-400">
+            <span className="text-sky-600 dark:text-sky-400">
               ExpenseTracker AI?
             </span>
           </h2>

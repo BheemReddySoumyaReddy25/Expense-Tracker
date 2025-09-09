@@ -13,7 +13,7 @@ const DescriptionField = ({
 }: Props) => (
   <div className="space-y-1.5">
     <label className="flex items-center gap-2 text-xs font-semibold text-gray-700 dark:text-gray-300 tracking-wide">
-      <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+      <span className="w-1.5 h-1.5 bg-sky-500 rounded-full"></span>
       Expense Description
     </label>
     <div className="relative">
@@ -30,7 +30,7 @@ const DescriptionField = ({
         type="button"
         onClick={onAISuggest}
         disabled={isCategorizing || !description.trim()}
-        className="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 bg-emerald-500 text-white rounded-lg flex items-center justify-center"
+        className="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 bg-sky-500 text-white rounded-lg flex items-center justify-center"
       >
         {isCategorizing ? (
           <div className="w-3 h-3 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>

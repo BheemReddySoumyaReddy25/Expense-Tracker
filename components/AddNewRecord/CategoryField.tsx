@@ -6,7 +6,7 @@ type Props = {
 const CategoryField = ({ category, setCategory }: Props) => (
   <div className="space-y-1.5">
     <label className="flex items-center gap-2 text-xs font-semibold text-gray-700 dark:text-gray-300">
-      <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+      <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span>
       Category
     </label>
     <select

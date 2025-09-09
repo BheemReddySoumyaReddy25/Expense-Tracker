@@ -4,19 +4,19 @@ import React from "react";
 const features = [
   {
     icon: "🤖",
-    gradient: "from-emerald-500 via-green-500 to-teal-500",
+    gradient: "from-sky-500 via-indigo-500 to-cyan-500",
     title: "AI Insights",
     description: "Smart analysis of your spending patterns",
   },
   {
     icon: "✨",
-    gradient: "from-green-500 via-teal-500 to-emerald-500",
+    gradient: "from-indigo-500 via-cyan-500 to-sky-500",
     title: "Auto Categories",
     description: "Intelligent expense categorization",
   },
   {
     icon: "📊",
-    gradient: "from-teal-500 via-emerald-500 to-green-500",
+    gradient: "from-cyan-500 via-sky-500 to-indigo-500",
     title: "Smart Dashboard",
     description: "Beautiful, intuitive financial overview",
     extraClasses: "sm:col-span-2 md:col-span-1", // special layout

@@ -6,11 +6,13 @@ type Props = {
 const AmountField = ({ amount, setAmount }: Props) => (
   <div className="space-y-1.5">
     <label className="flex items-center gap-2 text-xs font-semibold text-gray-700 dark:text-gray-300">
-      <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+      <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span>
       Amount
     </label>
     <div className="relative">
-      <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">$</span>
+      <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">
+        $
+      </span>
       <input
         type="number"
         name="amount"

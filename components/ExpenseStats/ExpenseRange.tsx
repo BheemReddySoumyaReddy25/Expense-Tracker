@@ -25,10 +25,10 @@ const ExpenseRange = ({ bestExpense, worstExpense }: Props) => (
     </div>
 
     {/* Lowest */}
-    <div className="bg-green-50/80 dark:bg-green-900/20 backdrop-blur-sm p-3 sm:p-4 rounded-xl border-l-4 border-l-green-500 hover:bg-green-50 dark:hover:bg-green-900/30">
+    <div className="bg-indigo-50/80 dark:bg-indigo-900/20 backdrop-blur-sm p-3 sm:p-4 rounded-xl border-l-4 border-l-indigo-500 hover:bg-indigo-50 dark:hover:bg-indigo-900/30">
       <div className="flex items-center gap-2">
-        <div className="w-6 h-6 bg-green-100 dark:bg-green-800 rounded-xl flex items-center justify-center">
-          <span className="text-sm font-bold text-green-600 dark:text-green-300">
+        <div className="w-6 h-6 bg-indigo-100 dark:bg-indigo-800 rounded-xl flex items-center justify-center">
+          <span className="text-sm font-bold text-indigo-600 dark:text-indigo-300">
             ↓
           </span>
         </div>
@@ -36,7 +36,7 @@ const ExpenseRange = ({ bestExpense, worstExpense }: Props) => (
           <h4 className="font-bold text-gray-900 dark:text-gray-100 text-xs mb-0.5">
             Lowest
           </h4>
-          <p className="text-lg font-bold text-green-600 dark:text-green-300">
+          <p className="text-lg font-bold text-indigo-600 dark:text-indigo-300">
             {worstExpense !== undefined ? `$${worstExpense}` : "No data"}
           </p>
         </div>

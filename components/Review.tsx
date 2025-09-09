@@ -6,22 +6,22 @@ const reviews = [
     initial: "S",
     name: "Sarah L.",
     text: "ExpenseTracker AI has completely transformed my budgeting. The AI insights are incredibly helpful and I now have full control over my finances!",
-    gradient: "from-emerald-500 via-green-500 to-teal-500",
-    bgOverlay: "from-emerald-500/5 to-green-500/5",
+    gradient: "from-sky-500 via-indigo-500 to-cyan-500",
+    bgOverlay: "from-sky-500/5 to-indigo-500/5",
   },
   {
     initial: "J",
     name: "John D.",
     text: "The AI-powered insights from ExpenseTracker have helped me identify and reduce unnecessary spending. The smart categorization is amazing!",
-    gradient: "from-green-500 via-teal-500 to-emerald-500",
-    bgOverlay: "from-green-500/5 to-teal-500/5",
+    gradient: "from-indigo-500 via-cyan-500 to-sky-500",
+    bgOverlay: "from-indigo-500/5 to-cyan-500/5",
   },
   {
     initial: "E",
     name: "Emily R.",
     text: "ExpenseTracker AI is so intelligent and easy to use. The AI recommendations are spot-on and have genuinely improved my financial habits!",
-    gradient: "from-teal-500 via-emerald-500 to-green-500",
-    bgOverlay: "from-teal-500/5 to-emerald-500/5",
+    gradient: "from-cyan-500 via-sky-500 to-indigo-500",
+    bgOverlay: "from-cyan-500/5 to-sky-500/5",
   },
 ];
 
@@ -64,7 +64,7 @@ function Review() {
             </p>
 
             {/* Stars */}
-            <div className="flex text-emerald-500 text-xs sm:text-sm">
+            <div className="flex text-sky-500 text-xs sm:text-sm">
               ⭐⭐⭐⭐⭐
             </div>
           </div>

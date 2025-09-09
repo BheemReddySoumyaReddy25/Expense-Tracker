@@ -2,7 +2,7 @@ const SubmitButton = ({ isLoading }: { isLoading: boolean }) => (
   <button
     type="submit"
     disabled={isLoading}
-    className="w-full bg-gradient-to-r from-emerald-600 via-green-500 to-teal-500 text-white px-4 py-3 rounded-xl font-semibold shadow-xl hover:shadow-2xl"
+    className="w-full bg-gradient-to-r from-sky-600 via-indigo-500 to-cyan-500 text-white px-4 py-3 rounded-xl font-semibold shadow-xl hover:shadow-2xl"
   >
     <div className="flex items-center justify-center gap-2">
       {isLoading ? (

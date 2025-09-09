@@ -6,25 +6,24 @@ const stats = [
     value: "10K+",
     label: "Active Users",
     gradient:
-      "from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20",
-    border: "border-emerald-100 dark:border-emerald-800/50",
-    text: "text-emerald-600 dark:text-emerald-400",
+      "from-sky-50 to-indigo-50 dark:from-sky-900/20 dark:to-indigo-900/20",
+    border: "border-sky-100 dark:border-sky-800/50",
+    text: "text-sky-600 dark:text-sky-400",
   },
   {
     value: "$2M+",
     label: "Money Tracked",
     gradient:
-      "from-green-50 to-teal-50 dark:from-green-900/20 dark:to-teal-900/20",
-    border: "border-green-100 dark:border-green-800/50",
-    text: "text-green-600 dark:text-green-400",
+      "from-indigo-50 to-cyan-50 dark:from-indigo-900/20 dark:to-cyan-900/20",
+    border: "border-indigo-100 dark:border-indigo-800/50",
+    text: "text-indigo-600 dark:text-indigo-400",
   },
   {
     value: "99%",
     label: "Satisfaction Rate",
-    gradient:
-      "from-teal-50 to-emerald-50 dark:from-teal-900/20 dark:to-emerald-900/20",
-    border: "border-teal-100 dark:border-teal-800/50",
-    text: "text-teal-600 dark:text-teal-400",
+    gradient: "from-cyan-50 to-sky-50 dark:from-cyan-900/20 dark:to-sky-900/20",
+    border: "border-cyan-100 dark:border-cyan-800/50",
+    text: "text-cyan-600 dark:text-cyan-400",
   },
 ];
 
@@ -32,19 +31,19 @@ function OurMission() {
   return (
     <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm relative overflow-hidden">
       {/* Top Gradient Bar */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500"></div>
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-500 via-indigo-500 to-cyan-500"></div>
 
       <div className="max-w-4xl mx-auto text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-3 py-1 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6">
-          <span className="w-1.5 h-1.5 bg-emerald-500 dark:bg-emerald-400 rounded-full"></span>
+        <div className="inline-flex items-center gap-2 bg-sky-50 dark:bg-sky-900/30 text-sky-700 dark:text-sky-300 px-3 py-1 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6">
+          <span className="w-1.5 h-1.5 bg-sky-500 dark:bg-sky-400 rounded-full"></span>
           Our Mission
         </div>
 
         {/* Heading */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 text-gray-900 dark:text-gray-100 px-2 sm:px-0">
           Transforming Financial Management with{" "}
-          <span className="text-emerald-600 dark:text-emerald-400">AI</span>
+          <span className="text-sky-600 dark:text-sky-400">AI</span>
         </h2>
 
         {/* Description */}

@@ -12,8 +12,8 @@ const ExpenseStatsCard = ({ averageExpense, totalDays }: Props) => (
       <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
         ${averageExpense.toFixed(2)}
       </div>
-      <div className="inline-flex items-center gap-2 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-1 rounded-full text-xs font-medium">
-        <span className="w-1.5 h-1.5 bg-emerald-500 dark:bg-emerald-400 rounded-full"></span>
+      <div className="inline-flex items-center gap-2 bg-sky-50 dark:bg-sky-900/30 text-sky-700 dark:text-sky-300 px-2 py-1 rounded-full text-xs font-medium">
+        <span className="w-1.5 h-1.5 bg-sky-500 dark:bg-sky-400 rounded-full"></span>
         Based on {totalDays} days with expenses
       </div>
     </div>

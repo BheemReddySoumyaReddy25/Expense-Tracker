@@ -13,15 +13,15 @@ export default function UserBadges({
         icon="📅"
         label="Joined"
         value={joinedDate}
-        gradient="from-emerald-50 to-green-50 dark:from-emerald-900/30 dark:to-green-900/30"
-        border="border-emerald-100 dark:border-emerald-800"
+        gradient="from-sky-50 to-indigo-50 dark:from-sky-900/30 dark:to-indigo-900/30"
+        border="border-sky-100 dark:border-sky-800"
       />
       <UserBadge
         icon="⚡"
         label="Last Active"
         value={lastActive}
-        gradient="from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30"
-        border="border-green-100 dark:border-green-800"
+        gradient="from-indigo-50 to-sky-50 dark:from-indigo-900/30 dark:to-sky-900/30"
+        border="border-indigo-100 dark:border-indigo-800"
       />
     </div>
   );
