@@ -4,21 +4,21 @@ import React from "react";
 const faqs = [
   {
     icon: "❓",
-    gradient: "from-emerald-500 via-green-500 to-teal-500",
+    gradient: "from-sky-500 via-indigo-500 to-cyan-500",
     question: "What is ExpenseTracker AI?",
     answer:
       "ExpenseTracker AI is an intelligent financial management tool that uses artificial intelligence to help you monitor your spending patterns, get smart category suggestions, and receive personalized insights to improve your financial health.",
   },
   {
     icon: "🤖",
-    gradient: "from-green-500 via-teal-500 to-emerald-500",
+    gradient: "from-indigo-500 via-cyan-500 to-sky-500",
     question: "How does the AI work?",
     answer:
       "Our AI analyzes your spending data to automatically categorize expenses, detect patterns, and provide personalized recommendations. You can also ask the AI questions about your spending habits and get instant, intelligent responses.",
   },
   {
     icon: "💎",
-    gradient: "from-teal-500 via-emerald-500 to-green-500",
+    gradient: "from-cyan-500 via-sky-500 to-indigo-500",
     question: "Is ExpenseTracker AI free?",
     answer:
       "Yes, ExpenseTracker AI offers a free plan with basic AI features including smart categorization and insights. Premium plans are available for advanced AI analytics and unlimited AI interactions.",
