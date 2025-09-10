@@ -95,12 +95,12 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
             <div className="inline-flex items-center gap-2 bg-sky-50 dark:bg-sky-900/30 text-sky-700 dark:text-sky-300 px-3 py-1 rounded-full text-xs font-medium">
               <span className="w-1.5 h-1.5 bg-sky-500 dark:bg-sky-400 rounded-full animate-pulse"></span>
-              Made by Sahand
+              Made by Soumya
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
